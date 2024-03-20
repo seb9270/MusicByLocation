@@ -14,6 +14,7 @@
 		5ADE12B22BAB634600893C91 /* MusicByLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE12B12BAB634600893C91 /* MusicByLocationTests.swift */; };
 		5ADE12BC2BAB634600893C91 /* MusicByLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE12BB2BAB634600893C91 /* MusicByLocationUITests.swift */; };
 		5ADE12BE2BAB634600893C91 /* MusicByLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE12BD2BAB634600893C91 /* MusicByLocationUITestsLaunchTests.swift */; };
+		5ADE12CB2BAB644700893C91 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE12CA2BAB644700893C91 /* LocationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		5ADE12B72BAB634600893C91 /* MusicByLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicByLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADE12BB2BAB634600893C91 /* MusicByLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITests.swift; sourceTree = "<group>"; };
 		5ADE12BD2BAB634600893C91 /* MusicByLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ADE12CA2BAB644700893C91 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		5ADE12CC2BAB956F00893C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,12 @@
 		5ADE129F2BAB634400893C91 /* MusicByLocation */ = {
 			isa = PBXGroup;
 			children = (
+				5ADE12CC2BAB956F00893C91 /* Info.plist */,
 				5ADE12A02BAB634400893C91 /* MusicByLocationApp.swift */,
 				5ADE12A22BAB634400893C91 /* ContentView.swift */,
 				5ADE12A42BAB634600893C91 /* Assets.xcassets */,
 				5ADE12A62BAB634600893C91 /* Preview Content */,
+				5ADE12CA2BAB644700893C91 /* LocationHandler.swift */,
 			);
 			path = MusicByLocation;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ADE12CB2BAB644700893C91 /* LocationHandler.swift in Sources */,
 				5ADE12A32BAB634400893C91 /* ContentView.swift in Sources */,
 				5ADE12A12BAB634400893C91 /* MusicByLocationApp.swift in Sources */,
 			);
@@ -424,6 +430,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MusicByLocation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicByLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App needs your location to let you groove!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +460,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MusicByLocation/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicByLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App needs your location to let you groove!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
